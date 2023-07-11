@@ -126,7 +126,7 @@ for c in consumer:
 2. Check `Access Key - Programmatic access` 
 3. `Attach existing policies directly` → add  `AmazonS3FullAccess`
     
-    ![Untitled](https://github.com/dougieduk/kafka_stock_data_collection_project/tree/ee6854ee9565dd5ec1dbeb0650fb79133e2b555d/https://github.com/dougieduk/kafka_stock_data_collection_project/tree/ee6854ee9565dd5ec1dbeb0650fb79133e2b555d/resources_for_md/Sample%20Project%20f36abb17d75c45e4bb31325c5ecccfd2/Sample%20Project%20f36abb17d75c45e4bb31325c5ecccfd2/Untitled%201.png)
+    ![Untitled](https://github.com/dougieduk/kafka_stock_data_collection_project/tree/ee6854ee9565dd5ec1dbeb0650fb79133e2b555d/https://github.com/dougieduk/kafka_stock_data_collection_project/tree/ee6854ee9565dd5ec1dbeb0650fb79133e2b555d/resources_for_md/Sample%20Project%20f36abb17d75c45e4bb31325c5ecccfd2/Sample%20Project%20f36abb17d75c45e4bb31325c5ecccfd2/Untitled1.png)
     
 4. Create User
 5. `IAM` → `Users` → `{user_name}` → `Access Keys` → `Create Access Keys` → `Command Line Interface (CLI)`
@@ -137,7 +137,7 @@ for c in consumer:
 1. Setting up the AWS CLI allows `s3fs` library to access the s3 directories as a local directory
 2. `aws configure` → add the keys from previous step 
     
-    ![Untitled](https://github.com/dougieduk/kafka_stock_data_collection_project/tree/ee6854ee9565dd5ec1dbeb0650fb79133e2b555d/resources_for_md/Sample%20Project%20f36abb17d75c45e4bb31325c5ecccfd2/Untitled%202.png)
+    ![Untitled](https://github.com/dougieduk/kafka_stock_data_collection_project/tree/ee6854ee9565dd5ec1dbeb0650fb79133e2b555d/resources_for_md/Sample%20Project%20f36abb17d75c45e4bb31325c5ecccfd2/Untitled2.png)
     
 
 # Complete the Code and Check the data
@@ -174,11 +174,11 @@ for count, message in enumerate(consumer):
 
 parquet tables look like this: 
 
-![Untitled](https://github.com/dougieduk/kafka_stock_data_collection_project/tree/ee6854ee9565dd5ec1dbeb0650fb79133e2b555d/resources_for_md/Sample%20Project%20f36abb17d75c45e4bb31325c5ecccfd2/Untitled%203.png)
+![Untitled](https://github.com/dougieduk/kafka_stock_data_collection_project/tree/ee6854ee9565dd5ec1dbeb0650fb79133e2b555d/resources_for_md/Sample%20Project%20f36abb17d75c45e4bb31325c5ecccfd2/Untitled3.png)
 
 and the files are saved as below: 
 
-![Untitled](https://github.com/dougieduk/kafka_stock_data_collection_project/tree/ee6854ee9565dd5ec1dbeb0650fb79133e2b555d/resources_for_md/Sample%20Project%20f36abb17d75c45e4bb31325c5ecccfd2/Untitled%204.png)
+![Untitled](https://github.com/dougieduk/kafka_stock_data_collection_project/tree/ee6854ee9565dd5ec1dbeb0650fb79133e2b555d/resources_for_md/Sample%20Project%20f36abb17d75c45e4bb31325c5ecccfd2/Untitled4.png)
 
 ### 2. Create Glue Crawler
 
@@ -188,7 +188,7 @@ and the files are saved as below:
 4. Choose IAM role → (If None) click `Create new IAM role` → `Next` 
 5. `Add database` → select the created database → Click `Advanced options` 
     
-    ![Untitled](https://github.com/dougieduk/kafka_stock_data_collection_project/tree/ee6854ee9565dd5ec1dbeb0650fb79133e2b555d/resources_for_md/Sample%20Project%20f36abb17d75c45e4bb31325c5ecccfd2/Untitled%205.png)
+    ![Untitled](https://github.com/dougieduk/kafka_stock_data_collection_project/tree/ee6854ee9565dd5ec1dbeb0650fb79133e2b555d/resources_for_md/Sample%20Project%20f36abb17d75c45e4bb31325c5ecccfd2/Untitled5.png)
     
 6. `Crawler Schedule` : On demand 
 7. `Create Cralwer` 
@@ -202,8 +202,8 @@ Click `Run Crawler` and wait until the crawler finishes
 1. `Athena` → `Settings` → `Manage` → add a S3 bucket to save temporary query results 
 2. `Editor` → `Tables and views` : find the table name you put in previous steps 
     
-    ![Untitled](https://github.com/dougieduk/kafka_stock_data_collection_project/tree/ee6854ee9565dd5ec1dbeb0650fb79133e2b555d/resources_for_md/Sample%20Project%20f36abb17d75c45e4bb31325c5ecccfd2/Untitled%206.png)
+    ![Untitled](https://github.com/dougieduk/kafka_stock_data_collection_project/tree/ee6854ee9565dd5ec1dbeb0650fb79133e2b555d/resources_for_md/Sample%20Project%20f36abb17d75c45e4bb31325c5ecccfd2/Untitled6.png)
     
 3. Query & Check the data!
     
-    ![Untitled](https://github.com/dougieduk/kafka_stock_data_collection_project/tree/ee6854ee9565dd5ec1dbeb0650fb79133e2b555d/resources_for_md/Sample%20Project%20f36abb17d75c45e4bb31325c5ecccfd2/Untitled%207.png)
+    ![Untitled](https://github.com/dougieduk/kafka_stock_data_collection_project/tree/ee6854ee9565dd5ec1dbeb0650fb79133e2b555d/resources_for_md/Sample%20Project%20f36abb17d75c45e4bb31325c5ecccfd2/Untitled7.png)
