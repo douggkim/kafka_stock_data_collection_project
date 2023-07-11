@@ -3,6 +3,7 @@
 # Resource
 Great thanks to Darshil Parmar for putting together such an easy-to-follow project! 
 I made adjustments to Kafka consumer and glue crawler part to fit my use cases. 
+
 [https://www.youtube.com/watch?v=KerNf0NANMo](https://www.youtube.com/watch?v=KerNf0NANMo)
 
 # Environment Setup
