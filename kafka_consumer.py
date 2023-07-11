@@ -47,8 +47,8 @@ for count, message in enumerate(consumer):
         
         # Record current time to use in file name 
         current_timestamp = datetime.now().strftime("%Y%m%d_%H%M%S%Z")
-        with s3.open(f"s3://kafka-stock-data-trial/stock_market_data_        {current_timestamp}.parquet", "wb") as file:
-            print(table)
+        with s3.open(f"s3://kafka-stock-data-trial/stock_market_data_{current_timestamp}.parquet", "wb") as file:
+            print(f"{current_timestamp} :: Collected 10 rows -> saving to a parquet file")
             pq.write_table(table, file)    
             #Renew the list 
             tmp_data = []
