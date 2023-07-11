@@ -1,6 +1,4 @@
-# Sample Project
-
-# Resource
+# Resource Used
 Great thanks to Darshil Parmar for putting together such an easy-to-follow project! 
 I made adjustments to Kafka consumer and glue crawler part to fit my use cases. 
 
